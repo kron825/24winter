@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多摩動物公園</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        
+      }
+      main{
+        background-color:#D5B8FF;
+        max-width: 100%;
+      }
+      .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+        text-align: center;
+        margin:50px auto 50px auto;
+        width: 200px;
+        height: auto; 
+        border-radius: 50%;
+        
+        
+      }
+      .items2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+        text-align: center;
+        margin:50px auto 50px auto;
+        width: 200px;
+        height: auto; 
+        border-radius: 20px;        
+      }
+      .items3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+        text-align: center;
+        margin:50px auto 50px auto;
+        width: 300px;
+        height: 250px; 
+        border-radius: 50%;
+      }
+
+      .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        margin-left: auto;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+        background-image: linear-gradient(
+          to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0)
+        );
+        box-shadow:
+          inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      }
+
+      .styled:hover {
+        background-color: rgba(255, 0, 0, 1);
+      }
+
+      .styled:active {
+        box-shadow:
+          inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+          inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+      }
+      .example3{
+          background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+          font-size: 300%;
+          display: inline-block;
+          text-align: center;
+      }
+      .bread-crumbs ul {
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        margin: 10px 10px;
+        font-size: 40px;
+      }
+      .bread-crumbs li {
+        display: inline;
+      }
+      .bread-crumbs li:after {
+        content: '>';
+        color: #000000;
+      }
+      .bread-crumbs li:last-child:after {
+        content: none;
+      }
+      .bread-crumbs li a {
+        text-decoration: none;
+        color: #218b21;
+      }
+      .bread-crumbs li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+  <main>
+    <h1 class="example3"><a href="https://www.tokyo-zoo.net/zoo/tama/" target="_blank">多摩動物公園ハイキング</a></h1>
+    <p>↑動物園はこちらから</p>
+      <div class="bread-crumbs">
+        <ul>
+          <li>
+            <a href="#">①</a>
+          </li>
+      </div>
+
+      <div>
+          <img src="img/IMG_9074.jpg" class="items" alt="">
+          <p style="text-align: center;  color: red;"><strong>ワシ</strong></p>
+      </div>
+      <div>
+          <img src="img/IMG_9079.jpg" class="items2" alt="">
+          <p style="text-align: center; color: orange;"><strong>キリン</strong></p>
+      </div>
+      <div>
+          <img src="img/IMG_9075.jpg" class="items3" alt="">
+          <p style="text-align: center; color: gray;"><strong>フクロウ</strong></p>
+      </div>
+    <button class="favorite styled" type="button"onclick=" location.href='./park2.html'"> 次のページ→</a></button>
+  </main>
+</body>
+</html>

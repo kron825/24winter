@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多摩動物公園</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        
+      }
+      main{
+        max-width: 100%;
+        background-color:#C3F3B7;
+      }
+      .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+        text-align: center;
+        margin:50px auto 50px auto;
+        width: 250px;
+        height: auto; 
+        border-radius: 50%;
+        
+        
+        
+      }
+      .items2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+        text-align: center;
+        margin:50px auto 50px auto;
+        width: 300px;
+        height: 300px;         
+      }
+
+      .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        margin-left: auto;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+        background-image: linear-gradient(
+          to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0)
+        );
+        box-shadow:
+          inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      }
+      .styled2 {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        margin-right: auto;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+        background-image: linear-gradient(
+          to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0)
+        );
+        box-shadow:
+          inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      }
+
+
+      .styled:hover {
+        background-color: rgba(255, 0, 0, 1);
+      }
+
+      .styled:active {
+        box-shadow:
+          inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+          inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+      }
+      .bread-crumbs ul {
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        margin: 10px 10px;
+        font-size: 40px;
+      }
+      .bread-crumbs li {
+        display: inline;
+      }
+      .bread-crumbs li:after {
+        content: '>';
+        color: #000000;
+      }
+      .bread-crumbs li:last-child:after {
+        content: none;
+      }
+      .bread-crumbs li a {
+        text-decoration: none;
+        color: #218b21;
+      }
+      .bread-crumbs li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+  <main>
+
+
+    <div class="bread-crumbs">
+      <ul>
+        <li>
+          <a href="park1.html">①</a>
+        </li>
+        <li>
+          <a href="#">②</a>
+        </li>
+    </div>
+
+    <div>
+      <p style="text-align: 20px; transform: rotate(-30deg); color: rgb(255, 0, 200); font-size: 50px;"><strong>★目キラキラ★</strong></p>
+      <img src="img/IMG_9094.jpg" class="items" alt="">
+      <p style="text-align: center; color: rgb(250, 52, 171);">テナガザル</p>
+    </div>
+    <div>
+      <p style="text-align:center ; color: rgb(255, 0, 0); font-size: 20px;"><strong>かっこいい</strong></p>
+      <img src="img/IMG_9090.jpg" class="items2" alt="">
+      <p style="text-align: center; color: rgb(255, 170, 0);">トラ</p>
+    </div>
+      <button class="favorite styled2" type="button"onclick=" location.href='./park1.html'">←前のページ</button>
+      <button class="favorite styled" type="button"onclick=" location.href='./park3.html'">次のページ→</button>
+
+  </main>
+</body>
+</html>
