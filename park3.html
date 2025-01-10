@@ -20,9 +20,9 @@
         gap: 29px;
         text-align: center;
         margin:50px auto 50px auto;
-        width: 250px;
+        width: 300px;
         height: auto; 
-        border-radius: 50%;
+
         
         
         
@@ -80,7 +80,12 @@
           inset 2px 2px 3px rgba(255, 255, 255, 0.6),
           inset -2px -2px 3px rgba(0, 0, 0, 0.6);
       }
-
+      .custom-underline {
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-decoration-style: dashed;
+      text-decoration-thickness: 3px;
+    }
 
       .styled:hover {
         background-color: rgba(255, 0, 0, 1);
@@ -110,7 +115,7 @@
       }
       .bread-crumbs li a {
         text-decoration: none;
-        color: #218b21;
+        color: #43a2e2;
       }
       .bread-crumbs li a:hover {
         text-decoration: underline;
@@ -124,13 +129,13 @@
     <div class="bread-crumbs">
       <ul>
         <li>
-          <a href="park1.html">①</a>
+          <a href="park1.html">キリン＆フクロウ</a>
         </li>
         <li>
-          <a href="park2.html">②</a>
+          <a href="park2.html">テナガザル＆トラ</a>
         </li>
         <li>
-          <a href="#">③</a>
+          <a href="#">カンガルー＆タカ</a>
         </li>
 
     </div>
@@ -141,12 +146,14 @@
       <p style="text-align: center; color: rgb(62, 52, 250);">カンガルー</p>
     </div>
     <div>
-      <p style="text-align: right; transform: rotate(-320deg); color: rgb(255, 0, 0); font-size: 50px;"><strong>かっこいい</strong></p>
+      <p class="custom-underline" style="text-align: right; color: rgb(255, 0, 0); font-size: 50px;"><strong>網越しでもわかるこのイケメン</strong></p>
       <img src="img/IMG_9078.jpg" class="items2" alt="">
       <p style="text-align: center; color: rgb(128, 0, 255);">タカ</p>
     </div>
-      <button class="favorite styled2" type="button"onclick=" location.href='./park1.html'">←最初のページ</button>
-
+    <p>多摩動物公園へのマップ</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6484.096499018083!2d139.39687167532819!3d35.65118285890675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2583ad7889f%3A0x5e4ecc1e62a0284!2z5aSa5pGp5YuV54mp5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1736482939060!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+    
+    <button class="favorite styled2" type="button"onclick=" location.href='./park1.html'">←最初のページ</button>
   </main>
 </body>
 </html>
